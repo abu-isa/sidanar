@@ -25,3 +25,5 @@ Route::post('/store_seminar','SeminarController@store');
 Route::get('/edit_seminar/{id}','SeminarController@edit');
 Route::put('/update_seminar','SeminarController@update');
 Route::delete('/delete_seminar/{id}','SeminarController@destroy');
+//registration
+Route::get('/listregistration','RegistrationController@index');
