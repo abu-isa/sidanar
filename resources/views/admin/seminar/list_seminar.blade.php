@@ -9,9 +9,9 @@
           <div class="col-lg-12">
             <h3 class="page-header"><i class="fa fa-table"></i> Table</h3>
             <ol class="breadcrumb">
-              <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-              <li><i class="fa fa-table"></i>Table</li>
-              <li><i class="fa fa-th-list"></i>Basic Table</li>
+              <li><i class="fa fa-home"></i><a href="{{ url('/admin') }}">Home</a></li>
+              <li><i class="fa fa-table"></i><a href="{{ url('/list_seminar') }}">Seminar</a></li>
+              <li><i class="fa fa-th-list"></i>Daftar seminar</li>
             </ol>
           </div>
         </div>
@@ -42,14 +42,14 @@
                     <td>{{ $data->harga }}</td>
                     <td>{{ $data->status }}</td>
                     <td>
-                      <div class="btn-group">
-                        <a class="btn btn-primary" href="/edit_seminar/{{ $data->id }}"><i class="icon_plus_alt2"></i></a>
-                        <!-- <a class="btn btn-danger" href="{{ url('/delete_seminar') }}/<?php echo $data->id ?>"><i class="icon_close_alt2"></i></a> -->
+                      <div class="btn-group" >
+                        <a class="btn btn-primary btn-sm" href="/edit_seminar/{{ $data->id }}"><i class="icon_plus_alt2"></i></a>
                         <form action="/delete_seminar/{{ $data->id }}" method="post" class="d-inline">
-                          <input type ='hidden' name ='_token' value ='<?php echo csrf_token(); ?>' >
-                         
-                        <button type="submit" class="btn btn-danger" ><i class="icon_close_alt2"></i></button>
-                      </form>
+                          @method('delete')
+                          @csrf
+                          <button type="submit" class="btn btn-danger btn-sm" ><i class="icon_close_alt2"></i></button>
+                        </form>
+                        
                       </div>
                     </td>
                   </tr>

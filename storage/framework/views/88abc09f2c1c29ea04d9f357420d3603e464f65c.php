@@ -7,7 +7,7 @@
 <title>Form</title>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="shortcut icon" href="<?php echo e(asset('/frontend')); ?>/img/fav.png">
-<link rel="stylesheet" href="http://localhost/registform/public/css/fontstyle.css">
+<link rel="stylesheet" href="<?php echo e(asset('css/fontstyle.css')); ?>">
 </head>
 <body>
 <div id="particles-js"></div>

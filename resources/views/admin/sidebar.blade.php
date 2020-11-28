@@ -17,7 +17,7 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="{{ url('/listseminar') }}">Seminar</a></li>
+              <li><a class="" href="{{ url('/list_seminar') }}">Seminar</a></li>
             </ul>
           </li>
 

@@ -10,7 +10,7 @@
             <h3 class="page-header"><i class="fa fa-table"></i> Seminar</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="{{ url('/admin') }}">Home</a></li>
-              <li><i class="fa fa-table"></i><a href="{{ url('/listseminar') }}">Seminar</a></li>
+              <li><i class="fa fa-table"></i><a href="{{ url('/list_seminar') }}">Seminar</a></li>
               <li><i class="fa fa-th-list"></i>Create Seminar</li>
             </ol>
           </div>

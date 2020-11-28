@@ -10,7 +10,7 @@
             <h3 class="page-header"><i class="fa fa-table"></i> Seminar</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="{{ url('/admin') }}">Home</a></li>
-              <li><i class="fa fa-table"></i><a href="{{ url('/listseminar') }}">Seminar</a></li>
+              <li><i class="fa fa-table"></i><a href="{{ url('/list_seminar') }}">Seminar</a></li>
               <li><i class="fa fa-th-list"></i>Create Seminar</li>
             </ol>
           </div>
@@ -23,8 +23,13 @@
                 Create seminar
               </header>
               <div class="panel-body">
+              @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+            @endif
               <form method="post" action="/store_seminar">
-              	 <input type ='hidden' name ='_token' value ='<?php echo csrf_token(); ?>' enctype="multipart/form-data">
+              @csrf
                   <div class="form-group col-sm-6">
                     <label for="judul">Seminar</label>
                     <input type="text" class="form-control" id="judul" name="judul">
@@ -39,7 +44,7 @@
                   </div>
                   <div class="form-group  col-sm-6">
                     <label for="images">Image</label>
-                    <input type="file" id="images" name="image">
+                    <input type="file" id="images" name="images">
                   </div>
                   <input type="hidden" name="status" value="1">
                   <button type="submit" class="btn btn-primary">Submit</button>
