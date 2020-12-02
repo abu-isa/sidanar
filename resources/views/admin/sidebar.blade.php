@@ -5,7 +5,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
           <li class="">
-            <a class="" href="index.html">
+            <a class="" href="{{ url('/admin') }}">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
