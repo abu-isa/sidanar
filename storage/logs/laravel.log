@@ -4820,3 +4820,7 @@
 [stacktrace]
 #0 {main}
 "} 
+[2020-12-09 09:29:13] local.ERROR: Maximum execution time of 60 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 60 seconds exceeded at D:\\sidanar\\app\\Midtrans.php:2)
+[stacktrace]
+#0 {main}
+"} 
