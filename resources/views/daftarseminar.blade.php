@@ -11,8 +11,8 @@
 </head>
 <body>
 <div id="particles-js"></div>
-<form action ='/create' method ='post'>
-	<input type ='hidden' name ='_token' value ='<?php echo csrf_token(); ?>'>
+<form method="post" action="/create">
+              @csrf
 	<div class="wrapper">
 		<div class="title">Registration Form</div>
 

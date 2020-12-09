@@ -7,6 +7,8 @@ use DB;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Validator;
+use Illuminate\Http\Response as LaravelResponse;
+// use Your\Namespace\Response;
 
 class AdddataController extends Controller
 {

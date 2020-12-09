@@ -1,5 +1,6 @@
 <?php
-    include(app_path() . '\Midtrans.php');
+	include(app_path() . '\Midtrans.php');
+	// require_once __DIR__ . '\Midtrans.php';
     
     //Set Server Key
     \Midtrans\Config::$serverKey = env('MIDTRANS_SERVER_KEY');
